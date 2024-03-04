@@ -1,0 +1,25 @@
+---
+motor:
+# blank for now
+
+# parameters of the cooling jacket
+cooling_jacket:
+  inner_wall_thickness:
+    value: 5.0
+    units: "mm"
+  
+  outer_wall_thickness:
+    value: 5.0
+    units: "mm"
+  
+  channel_height:
+    value: 0.0
+    units: "mm"
+
+  channel_width:
+    value: 2.0
+    units: "mm"
+  
+  channel_length:
+    value: 1.0
+    units: "mm"
