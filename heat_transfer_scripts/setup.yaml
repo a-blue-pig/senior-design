@@ -1,25 +1,69 @@
 ---
+#----------------------
+# Basic format
+#
+# category:
+#   property:
+#     val: <value>
+#     unit: <units>
+#   example:
+#     val: 1.0
+#     unit: "m"
+#   ...
+#----------------------
+
+# Motor constants and properties
 motor:
+# blank for now
+
+# properties of a fluid we choose
+fluid_properties:
+  name:
+    val: "Water"
+    unit: "na"
+  cp: # specific heat
+    val: 1.0
+    unit: "J/Kg.K"
+  velocity:
+    val: 1.0
+    unit: "m/s"
+  density:
+    val: 1.0
+    unit: "Kg/m^3"
+  viscosity:
+    val: 1.0
+    unit: "Kg/m.s"
+  k: # thermal conductivity
+    val: 1.0
+    unit: "W/m.K"
+  
+
+# radiator properties
+radiator:
 # blank for now
 
 # parameters of the cooling jacket
 cooling_jacket:
   inner_wall_thickness:
-    value: 5.0
-    units: "mm"
+    val: 5.0
+    unit: "mm"
   
   outer_wall_thickness:
-    value: 5.0
-    units: "mm"
+    val: 5.0
+    unit: "mm"
   
-  channel_height:
-    value: 0.0
-    units: "mm"
-
-  channel_width:
-    value: 2.0
-    units: "mm"
+  ID:
+    val: 1.0
+    unit: "mm"
   
   channel_length:
-    value: 1.0
-    units: "mm"
+    val: 1.0
+    unit: "mm"
+
+  # bad_units_test:
+  #   val: 1.4
+  #   unit: "in"
+
+  # bad_units_test2:
+  #   val: 1.4
+  #   unit: "in"
